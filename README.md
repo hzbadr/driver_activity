@@ -4,9 +4,10 @@
  ./bin/rails c -p 3002
 
 #### Request
- http://localhost:3002/daily_activities?driver_id=1&day=2018-06-28
+  GET
+  http://localhost:3002/daily_activities?driver_id=1&day=2018-06-28
 
- day should be in the format YYYY-MM-DD
+  day should be in the format YYYY-MM-DD
 
 #### Response
   [
