@@ -1,24 +1,31 @@
-# README
+# Docs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ start server
+ ./bin/rails c -p 3002
 
-Things you may want to cover:
+#### Request
+ http://localhost:3002/daily_activities?driver_id=1&day=2018-06-28
 
-* Ruby version
+ day should be in the format YYYY-MM-DD
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Response
+  [
+    {
+      "from": "16:56",
+      "to": "17:56",
+      "activity": "Repairing",
+      "duration": "01:00"
+    },
+    {
+      "from": "18:06",
+      "to": "21:06",
+      "activity": "Cultivating",
+      "duration": "03:00"
+    },
+    {
+      "from": "21:06",
+      "to": "22:36",
+      "activity": "Driving",
+      "duration": "01:30"
+    }
+  ]
